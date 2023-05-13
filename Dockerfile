@@ -8,4 +8,3 @@ FROM tomcat:8-jre8
 #MAINTAINER 
 MAINTAINER "fgereus2gmail.com'
 COPY ./webapp.war /usr/local/tomcat/webapps
-#EXPOSE
