@@ -3,8 +3,9 @@
 #EXPOSE 8081
 #ENTRYPORT ["-java","-jar","spring-boot-maven-plugin.jar"]
 
-#Pull base image
-FROM tomcat:8-jre8
-#MAINTAINER 
-MAINTAINER "fgereus@gmail.com'
-COPY ./webapp.war /usr/local/tomcat/webapps
+# Pull base image 
+FROM tomcat:8-jre8 
+
+# Maintainer 
+MAINTAINER "jskadjkdasf@yahoo.fr" 
+COPY ./webapp/target/webapp.war /usr/local/tomcat/webapps
