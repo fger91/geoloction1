@@ -4,19 +4,19 @@ pipeline {
         maven 'M2_HOME'
     }
     environment {
-    registry = '076892551558.dkr.ecr.us-east-1.amazonaws.com/devop_repository'
-    registryCredential = 'jenkins-ecr'
+    registry = 132722443800.dkr.ecr.us-east-1.amazonaws.com/devopst-terra
+    registryCredential = 'aws-credentials'
     dockerimage = ''
   }
     stages {
         stage('Checkout'){
             steps{
-                git branch: 'main', url: 'https://github.com/Hermann90/helloworld_jan_22.git'
+                git branch: 'main', url: 'https://github.com/fger91/geoloction1.git'
             }
         }
         stage('Code Build') {
             steps {
-                sh 'mvn clean package'
+                sh 'mvn clean install package'
             }
         }
         stage('Test') {
