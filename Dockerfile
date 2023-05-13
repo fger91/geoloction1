@@ -8,4 +8,4 @@ FROM tomcat:8-jre8
 
 # Maintainer 
 MAINTAINER "jskadjkdasf@yahoo.fr" 
-COPY ./target/webapp.war /usr/local/tomcat/webapps
+COPY ./target/bioMedical-0.0.1-SNAPSHOT.jar/ /usr/local/tomcat/webapps
